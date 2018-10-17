@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Address Book</h1>
+      <h2>Add Contact</h1>
+      <form id="contacts">
+        <h3>Name</h3>
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+        <h3>Address</h3>
+        <div class="form-group">
+          <label for="street">Street:</label>
+          <input id="street" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input id="city" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <select class="form-control" id="state">
+            <option>OR</option>
+            <option>WA</option>
+            <option>CA</option>
+            <option>ID</option>
+            <option>UT</option>
+            <option>NV</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip code:</label>
+          <input id="zip" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn-default">Submit</button>
+      </form>
+      <!-- <div class="contactInfo">
+        <p><strong>Name: </strong><span class="name"></span></p>
+        <p><strong>Address: </strong><span class="address"></span></p>
+      </div> -->
+      <h2>Contacts</h2>
+      <ul class="contact-list">
+      </ul>
+    </div>
+  </body>
+</html>
