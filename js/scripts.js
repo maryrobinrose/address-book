@@ -12,6 +12,6 @@ $(document).ready(function(){
     // $(".name").text(firstName + " " + lastName);
     // $(".address").text(street + " " + city + ", " + state + " " + zip);
 
-    $(".contact-list").append("<li>" + firstName + " " + lastName + "</li>");
+    $(".contact-list").append("<li>" + firstName + " " + lastName + "<span class='details'>" + street + "</span></li>");
   });
 });
