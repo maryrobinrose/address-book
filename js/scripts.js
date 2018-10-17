@@ -9,9 +9,9 @@ $(document).ready(function(){
     var state = $("#state").val();
     var zip = $("input#zip").val();
 
-    // $(".name").text(firstName + " " + lastName);
-    // $(".address").text(street + " " + city + ", " + state + " " + zip);
-
-    $(".contact-list").append("<li>" + firstName + " " + lastName + "<span class='details'>" + street + "</span></li>");
+    $(".contact-list").append("<li>" + firstName + " " + lastName + " <span class='details'>: " + street + " " + city + " " + state + " " + zip + "</span></li>");
+    $(".contact-list").children("li").last().click(function() {
+      $(this).children(".details").toggle();
+    });
   });
 });
